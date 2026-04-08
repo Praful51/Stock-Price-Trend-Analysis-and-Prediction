@@ -56,7 +56,8 @@ movements indicates that it detects the trend shifts earlier.
 **Recommendation:** Active traders and algorithmic trading systems should use EMA as a primary signal for entry and exit decisions. Switching from SMA to EMA based signals could help traders enter rallies earlier and exit dips faster, directly improving returns on short term AAPL trades.
 
 
-**Predictive Model:Next-Day Price Prediction**
+
+**Predictive Model: Next-Day Price Prediction**
 
 ![actual_vs_predicted](images/actual_vs_predicted.png)
 
