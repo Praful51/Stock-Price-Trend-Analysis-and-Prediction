@@ -56,5 +56,29 @@ movements indicates that it detects the trend shifts earlier.
 **Recommendation:** Active traders and algorithmic trading systems should use EMA as a primary signal for entry and exit decisions. Switching from SMA to EMA based signals could help traders enter rallies earlier and exit dips faster, directly improving returns on short term AAPL trades.
 
 
+**Predictive Model:Next-Day Price Prediction**
+
+![actual_vs_predicted](images/actual_vs_predicted.png)
+
+**Linear Regression model** was built to predict the next day's closing price of AAPL using engineered features.
+
+**Features Used:**
+- SMA_20, SMA_50, EMA_20, EMA_50, Daily Return, Volume
+
+**Approach:**
+- Created a `Target` column by shifting Close price by 1 day
+- Split data into 80% training and 20% testing
+- Trained a Linear Regression model on historical data
+
+**Model Results:**
+
+| Metric | Score | Meaning |
+|--------|-------|---------|
+| MAE | 2.88 | Predictions are on average only $2.88 off |
+| RMSE | 3.80 | No major outlier predictions |
+| R2 | 0.99 | Model explains 99% of price movement |
+
+**Recommendation:** The model achieved a near perfect R2 score of 0.99 with an average error of just $2.88 on a stock trading around $180-$280 — confirming that SMA, EMA and Daily Return are strong predictors of next day price. This model can assist traders in making **data driven next day price estimates** with high confidence.
+
   
 
