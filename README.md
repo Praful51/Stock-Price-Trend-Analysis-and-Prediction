@@ -26,6 +26,8 @@ This project focuses on analyzing historical stock price data and building a pre
 
  - The stock shows overall upward trend over time & has shown a remarkable growth overtime with its price moving from nearly 70 to 280 from Year 2020 to 2026
 
+**Recommendation:** AAPL is a strong candidate for long term portfolio holding. Investors who stayed invested through dips were rewarded with nearly 4x return in 6 years. Businesses managing employee pension funds or retail investors should consider AAPL as a core holding rather than a trading stock.
+
 **2. Sustained Bullish Momentum**
 
 ![price&ma](images/price_vs_ma.png)
@@ -33,6 +35,7 @@ This project focuses on analyzing historical stock price data and building a pre
 - Could be observed that close price is consistently staying above both simple moving averages 20 & 50 throughout indicates a sustained bullish trend
   suggesting that stock has maintained strong upward momentum over 6 years
 
+**Recommendation:**
 **3. Volatility**   
 
 ![volatility](images/volatility.png)
@@ -48,6 +51,8 @@ This project focuses on analyzing historical stock price data and building a pre
  
 -  EMA_20 consistently hugging the Close price more tightly than SMA_20, confirming EMA's faster reaction to price 
 movements indicates that it detects the trend shifts earlier.
+
+
 
   
 
