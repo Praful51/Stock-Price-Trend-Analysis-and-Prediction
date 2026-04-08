@@ -32,10 +32,10 @@ This project focuses on analyzing historical stock price data and building a pre
 
 ![price&ma](images/price_vs_ma.png)
  
-- Could be observed that close price is consistently staying above both simple moving averages 20 & 50 throughout indicates a sustained bullish trend
-  suggesting that stock has maintained strong upward momentum over 6 years
+- Could be observed that close price is consistently staying above both simple moving averages 20 & 50 throughout indicates a sustained bullish trend suggesting that stock has maintained strong upward momentum over 6 years
 
-**Recommendation:**
+**Recommendation:** Instead of guessing when to buy AAPL, fund managers can follow a simple rule — whenever the price drops close to or below the 50 day average, it is a good time to buy. History shows the price always recovered after such dips which makes us decisive based on data. 
+
 **3. Volatility**   
 
 ![volatility](images/volatility.png)
@@ -44,6 +44,7 @@ This project focuses on analyzing historical stock price data and building a pre
   Rare extreme events beyond ±10% exist but are very infrequent, suggesting they were driven by 
   specific news or events rather than regular market behavior.  
 
+**Recommendation:** Stock does not swing wildly in price on most days — it moves in a small, steady and mostly positive direction. This makes it a safe and reliable stock for people who cannot afford big losses — like those saving for retirement, education, or long term goals. Small daily gains may look tiny alone but over years they add up significantly.
 
  **4. EMA- Strong Predictor**
 
@@ -52,6 +53,7 @@ This project focuses on analyzing historical stock price data and building a pre
 -  EMA_20 consistently hugging the Close price more tightly than SMA_20, confirming EMA's faster reaction to price 
 movements indicates that it detects the trend shifts earlier.
 
+**Recommendation:** Active traders and algorithmic trading systems should use EMA as a primary signal for entry and exit decisions. Switching from SMA to EMA based signals could help traders enter rallies earlier and exit dips faster, directly improving returns on short term AAPL trades.
 
 
   
