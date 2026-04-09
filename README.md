@@ -18,6 +18,13 @@ This project focuses on analyzing historical stock price data and building a pre
 - Regression Model for Prediction
 - Dashboard Creation in Power BI
 
+
+**Dashboard Preview:**
+
+![dashboard](images/dashboard_stock.png)
+
+
+
 **Key Insights:**
 
 **1. Overall Upward Trend**
