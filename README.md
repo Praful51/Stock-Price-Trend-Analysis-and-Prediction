@@ -75,18 +75,18 @@ movements indicates that it detects the trend shifts earlier.
 
 **Approach:**
 - Created a `Target` column by shifting Close price by 1 day
-- Split data into 80% training and 20% testing
+-  Used chronological 80/20 split (no data leakage)
 - Trained a Linear Regression model on historical data
 
 **Model Results:**
 
 | Metric | Score | Meaning |
 |--------|-------|---------|
-| MAE | 2.88 | Predictions are on average only $2.88 off |
-| RMSE | 3.80 | No major outlier predictions |
-| R2 | 0.99 | Model explains 99% of price movement |
+| MAE | 4.78 | Predictions are on average only $4.78 off |
+| RMSE | 6.48 | No major outlier predictions |
+| R2 | 0.94 | Model explains 94% of price movement |
 
-**Recommendation:** The model achieved a near perfect R2 score of 0.99 with an average error of just $2.88 on a stock trading around $180-$280 — confirming that SMA, EMA and Daily Return are strong predictors of next day price. This model can assist traders in making **data driven next day price estimates** with high confidence.
+**Recommendation:** The model achieved an excellent R2 score of 0.94 with an average error of just $4.78 on a stock trading around $180-$280 — confirming that SMA, EMA and Daily Return are strong predictors of next day price. This model can assist traders in making **data driven next day price estimates** with high confidence.
 
   
 
