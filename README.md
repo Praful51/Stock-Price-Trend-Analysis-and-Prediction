@@ -31,7 +31,7 @@ This project focuses on analyzing historical stock price data and building a pre
    
 ![overall_trend](images/overall_trend.png)
 
- - The stock shows overall upward trend over time & has shown a remarkable growth overtime with its price moving from nearly 70 to 280 from Year 2020 to 2026
+ - The stock shows overall upward trend over time & has shown a remarkable growth overtime with its price moving from nearly 70 to 280 from Year 2020 - 2026
 
 **Recommendation:** AAPL is a strong candidate for long term portfolio holding. Investors who stayed invested through dips were rewarded with nearly 4x return in 6 years. Businesses managing employee pension funds or retail investors should consider AAPL as a core holding rather than a trading stock.
 
@@ -77,6 +77,7 @@ movements indicates that it detects the trend shifts earlier.
 - Created a `Target` column by shifting Close price by 1 day
 -  Used chronological 80/20 split (no data leakage)
 - Trained a Linear Regression model on historical data
+- Trained a Random Forest model also but it did not perform well as my data had linear relationship: Features showed **0.98+ correlations** with Target (EMA20: 0.989, SMA20: 0.985), So Linear Regression worked well here & was chosen.
 
 **Model Results:**
 
