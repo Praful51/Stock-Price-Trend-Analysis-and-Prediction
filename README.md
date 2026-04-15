@@ -71,23 +71,23 @@ movements indicates that it detects the trend shifts earlier.
 **Linear Regression model** was built to predict the next day's closing price of AAPL using engineered features.
 
 **Features Used:**
-- SMA_20, SMA_50, EMA_20, EMA_50, Daily Return, Volume
+- Prev_close,SMA_20, SMA_50, EMA_20, EMA_50
 
 **Approach:**
 - Created a `Target` column by shifting Close price by 1 day
 -  Used chronological 80/20 split (no data leakage)
 - Trained a Linear Regression model on historical data
-- Trained a Random Forest model also but it did not perform well as my data had linear relationship: Features showed **0.98+ correlations** with Target (EMA20: 0.989, SMA20: 0.985), So Linear Regression worked well here & was chosen.
+- Trained a Random Forest model also but it did not perform well compared to linear regression model as my data had linear relationship: Features showed **0.98+ correlations** with Target (prev_close: 0.99, ema_20: 0.988, sma20: 0.984), So Linear Regression worked well here & was chosen.
 
-**Model Results:**
+**Linear Regression Model Results:**
 
 | Metric | Score | Meaning |
 |--------|-------|---------|
-| MAE | 4.78 | Predictions are on average only $4.78 off |
-| RMSE | 6.48 | No major outlier predictions |
-| R2 | 0.94 | Model explains 94% of price movement |
+| MAE | 4.34 | Predictions are on average only $4.78 off |
+| RMSE | 6.30 | No major outlier predictions |
+| R2 | 0.95 | Model explains 95% of price movement |
 
-**Recommendation:** The model achieved an excellent R2 score of 0.94 with an average error of just $4.78 on a stock trading around $180-$280 — confirming that SMA, EMA and Daily Return are strong predictors of next day price. This model can assist traders in making **data driven next day price estimates** with high confidence.
+**Recommendation:** The model achieved an excellent R2 score of 0.95 with an average error of just $4.34 on a stock trading around $180-$280 — confirming that SMA, EMA and Previous close are strong predictors of next day price. This model can assist traders in making **data driven next day price estimates** with high confidence.
 
   
 
